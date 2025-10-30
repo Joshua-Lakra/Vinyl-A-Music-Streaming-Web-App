@@ -1,10 +1,11 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import mongoose from "mongoose";
 const PORT = process.env.PORT || 1337;
-require('dotenv').config();
 
 // Importing routes
 import authRoutes from "./routes/authRoutes.js";
