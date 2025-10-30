@@ -17,7 +17,7 @@ const Login = () => {
   if (document.domain === "localhost") {
     __URL__ = "http://localhost:1337";
   } else {
-    __URL__ = "https://music-player-app-backend-yq0c.onrender.com";
+    __URL__ = "https://vinyl-a-music-streaming-web-app.onrender.com/";
   }
 
   const handleSubmit = async (e) => {
