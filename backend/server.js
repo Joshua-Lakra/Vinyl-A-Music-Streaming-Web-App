@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import mongoose from "mongoose";
+const PORT = process.env.PORT || 1337;
 
 // Importing routes
 import authRoutes from "./routes/authRoutes.js";
@@ -47,6 +48,6 @@ app.get("*", (req, res) => {
 });
 
 // Start the server
-app.listen(1337, () => {
+app.listen(PORT, () => {
   console.log(`Server is running at localhost:1337`);
 });
